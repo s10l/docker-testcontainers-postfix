@@ -1,14 +1,14 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 LABEL maintainer="s10l@github.com"
 
 RUN apk update \
 && apk upgrade \
 && apk add --no-cache \
-postfix=3.1.4-r1 \
-cyrus-sasl=2.1.26-r10 \
-rsyslog=8.26.0-r0 \
-supervisor=3.2.4-r0
+postfix=3.2.4-r1 \
+cyrus-sasl=2.1.26-r11 \
+rsyslog=8.31.0-r0 \
+supervisor=3.3.3-r1
 
 WORKDIR /etc
 
